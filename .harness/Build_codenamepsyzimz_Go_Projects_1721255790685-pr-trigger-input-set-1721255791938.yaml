@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_codenamepsyzimz_Go_Projects_1721255790685-pr-trigger-input-set
+  identifier: Build_codenamepsyzimz_Go_Projects_1721255790685prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: GoProject
+  pipeline:
+    identifier: Build_codenamepsyzimz_Go_Projects_1721255790685
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
