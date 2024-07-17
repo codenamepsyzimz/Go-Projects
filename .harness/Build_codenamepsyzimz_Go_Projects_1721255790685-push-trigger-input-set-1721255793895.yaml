@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_codenamepsyzimz_Go_Projects_1721255790685-push-trigger-input-set
+  identifier: Build_codenamepsyzimz_Go_Projects_1721255790685pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: GoProject
+  pipeline:
+    identifier: Build_codenamepsyzimz_Go_Projects_1721255790685
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
