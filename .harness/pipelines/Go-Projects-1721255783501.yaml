@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_codenamepsyzimz_Go_Projects_1721255790685
+  name: Build Go-Projects
+  orgIdentifier: default
+  projectIdentifier: GoProject
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1721255762238
+        repoName: codenamepsyzimz/Go-Projects
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Docker
+        type: CI
